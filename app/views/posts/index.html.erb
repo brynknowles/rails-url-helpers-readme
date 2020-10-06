@@ -1,0 +1,6 @@
+
+/ this is the refactored router helper method that links to post page from index page /
+
+<% @posts.each do |post| %>
+    <div><%= link_to post.title, post_path(post) %></div>
+<% end %>
